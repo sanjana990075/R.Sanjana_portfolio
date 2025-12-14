@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">R Sanjana</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">R Sanjana</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./profile-pic.jpeg" alt="R Sanjana profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">R Sanjana</h1>
+            <p class="section__text__p2">Computer Science Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./sanjana_resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./linked-in.jpeg" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/rsanjana2004/'" />
+                <img src="./github.jpeg" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/sanjana990075'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./profile-pic.jpeg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src='./education.jpeg' alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Ballari Institute of Technology and Management <br> Bachelor of Engineering <br> Computer
+                            Science And Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Motivated Computer Science student with a strong foundation in Python programming and web
+                        development. Passionate about
+                        building efficient solutions using technology and continuously learning new tools. Skilled in
+                        teamwork, problem-solving,
+                        and
+                        applying coding knowledge to real-world projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./down-arrow.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./language.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Language Translator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/sanjana990075/Language-Translator-using-Google-Trans'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='language_translator (1)_reduced.mp4'">
+                            Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./desktop_assistant.png" alt="Desktop Assistant" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Desktop Assistant</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/sanjana990075/Desktop-Assitant'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='desktop_assistant (1)_compressed.mp4'">
+                            Demo
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Cradle_Care.jpg" alt="Cradle_Care" class="project-img" />
+                    </div>
+
+                    <h2 class="experience-sub-title project-title">Cradle-Care</h2>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/sanjana990075/Cradle_Care'">
+                            Github
+                        </button>
+
+                        <!-- Demo button triggers popup -->
+                        <button class="btn btn-color-2 project-btn" onclick="openCradleDemo()">
+                            Demo
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Quick-chat.png" alt="Quick-Chat" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Quick-Chat</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/sanjana990075/Quick-Chat-App'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='Quick-Chat-.mp4'">
+                            Demo
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="achievements">
+        <p class="section__text__p1">My Highlights</p>
+        <h1 class="title">Achievements</h1>
+
+        <div class="achievements-slider">
+
+            <div class="achievement-card">
+                <img src="HackB-23.jpg" alt="Hackathon" class="achievement-img">
+                <h2 class="achievement-title">Hackathon 2022 Winner</h2>
+                <p>Won 2nd runner-up for Innovative Solution On Railways.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="nain.jpg" alt="NAIN" class="achievement-img">
+                <h2 class="achievement-title">Winner – NAIN Ideathon 2024</h2>
+                <p>Won first place for the Smart Agriculture Machine innovation.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="Declamation-2024.jpg" alt="Yuva Utsav" class="achievement-img">
+                <h2 class="achievement-title">Runner-Up – Yuva Utsav (Declamation)</h2>
+                <p>Secured 1st runner-up in district-level declamation competition 2024.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="sciencemela-2024.jpg" alt="Science Mela" class="achievement-img">
+                <h2 class="achievement-title">Runner-Up – Yuva Utsav (Science Mela)</h2>
+                <p>Secured 1st runner-up in district-level Science Mela competition 2024 for Desktop Assistant.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="Elocution.jpg" alt="Science Mela" class="achievement-img">
+                <h2 class="achievement-title">Winner at Elocution(Explorika-2025)</h2>
+                <p>Winner at Elocution at Explorika 2025.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="PaperPresenatation.jpg" alt="Science Mela" class="achievement-img">
+                <h2 class="achievement-title">Winner At Paper PaperPresenatation 2025(Explorika)</h2>
+                <p>Winner at PaperPresenatation for the Paper Tittled "The Silent Impact Of Social Media On Health".</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="Declamation-2025.jpg" alt="Yuva Utsav" class="achievement-img">
+                <h2 class="achievement-title">Runner-Up – Yuva Utsav (Declamation)</h2>
+                <p>Secured 1st runner-up in district-level declamation competition 2025.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="prize.jpg" alt="Internship" class="achievement-img">
+                <h2 class="achievement-title">Karnataka State Level Winner-Science Category</h2>
+                <p>Team Farm Fusion Won first Prize at State Level.</p>
+            </div>
+
+            <div class="achievement-card">
+                <img src="ServiceNow.png" alt="Internship" class="achievement-img">
+                <h2 class="achievement-title">ServiceNow Virtual Internship (SmartBridge + AICTE)</h2>
+                <p>Completed virtual internship & certification with ServiceNow modules.</p>
+            </div>
+
+            
+
+        </div>
+
+        <img src="./down-arrow.svg" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+
+
+
+
+
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./mail.jpeg" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:rsanjana9900@mail@gmail.com">rsanjana9900@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./linked-in.jpeg" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href='https://www.linkedin.com/in/rsanjana2004/'>LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 R Sanjana. All Rights Reserved.</p>
+    </footer>
+    <script src="scrip.js"></script>
+
+    <!-- POPUP GALLERY FOR CRADLE CARE -->
+    <div id="cradleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCradleDemo()">&times;</span>
+            <h2>Cradle Care – Demo Images</h2>
+
+            <div class="gallery">
+                <img src="./Cradle_Care.jpg" />
+                <img src="happy.jpg" />
+                <img src="./cry.jpg" />
+                <img src="./neutral.jpg" />
+                <img src="./sleeping.jpg" />
+                <img src="./email.jpg" />
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
